@@ -1,0 +1,32 @@
+# cloudbuild.yaml
+# This file defines the steps for Cloud Build to build and deploy your application to Cloud Run.
+
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  id: 'Build Docker Image'
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/adaptive-identity-guardian:$COMMIT_SHA'
+  - '.'
+- name: 'gcr.io/cloud-builders/docker'
+  id: 'Push Docker Image'
+  args:
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/adaptive-identity-guardian:$COMMIT_SHA'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: 'Deploy to Cloud Run'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'adaptive-identity-guardian' # Name of your Cloud Run service
+  - '--image'
+  - 'gcr.io/$PROJECT_ID/adaptive-identity-guardian:$COMMIT_SHA'
+  - '--region'
+  - 'us-central1' # Choose an appropriate region, e.g., us-central1, europe-west1, etc.
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated' # Set to '--no-allow-unauthenticated' if you want to restrict access
+images:
+- 'gcr.io/$PROJECT_ID/adaptive-identity-guardian:$COMMIT_SHA'

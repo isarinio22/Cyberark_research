@@ -18,14 +18,16 @@ echo "Project ID: $PROJECT_ID"
 echo "Region: $REGION"
 echo "Service Name: $SERVICE_NAME"
 
-# 1. Get the current commit SHA to tag the Docker image
+# 1. Get a unique tag for the Docker image (Git SHA or Timestamp)
 # This ensures unique image versions for each deployment
-COMMIT_SHA=$(git rev-parse HEAD)
+COMMIT_SHA=$(git rev-parse HEAD 2>/dev/null) # Try to get Git SHA, suppress errors
 if [ -z "$COMMIT_SHA" ]; then
-  echo "Error: Could not determine Git commit SHA. Please run this script in a Git repository."
-  exit 1
+  # If not a Git repository or git command fails, use a timestamp as fallback
+  COMMIT_SHA=$(date +%Y%m%d%H%M%S)
+  echo "Warning: Not a Git repository or Git command failed. Using timestamp '$COMMIT_SHA' as image tag."
+else
+  echo "Using Git Commit SHA: $COMMIT_SHA"
 fi
-echo "Using Git Commit SHA: $COMMIT_SHA"
 
 # 2. Build the Docker image
 # The Dockerfile and application code (index.html, main.py, requirements.txt)

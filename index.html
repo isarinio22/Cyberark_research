@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Identity Guardian - Strategic Overview for CyberArk Managers</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark slate gray for text */
+        }
+        .header-gradient {
+            background: linear-gradient(to right, #004AAD, #007BFF); /* CyberArk blue gradient */
+        }
+        .btn-primary {
+            background-color: #007BFF; /* CyberArk blue */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-heading {
+            color: #1a202c; /* Darker text for headings */
+            font-weight: 700;
+        }
+        .feature-icon {
+            color: #007BFF; /* Accent color for icons */
+        }
+        .footer-bg {
+            background-color: #1a202c; /* Dark footer background */
+        }
+        .text-cyberark-blue {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-gradient text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- CyberArk Logo -->
+            <div class="flex items-center">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQF_LV6_60xwnA/company-logo_200_200/company-logo_200_200/0/1727881963333/cyber_ark_software_logo?e=2147483647&v=beta&t=Y6wcSbWxWujs-38lETuYDm2hNlPfUsMNkaqFyD23RDs" alt="CyberArk Logo" class="h-16 w-auto rounded-md mr-3">
+                <span class="text-2xl font-bold">Adaptive Identity Guardian</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#overview" class="hover:text-gray-200 transition-colors">Overview</a></li>
+                    <li><a href="#challenge" class="hover:text-gray-200 transition-colors">The Challenge</a></li>
+                    <li><a href="#solution" class="hover:text-gray-200 transition-colors">Our Solution</a></li>
+                    <li><a href="#features" class="hover:text-gray-200 transition-colors">Features</a></li>
+                    <li><a href="#market" class="hover:text-gray-200 transition-colors">Market Opportunity</a></li>
+                    <li><a href="#contact" class="btn-primary ml-4">Request Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="overview" class="relative bg-gradient-to-br from-blue-700 to-blue-900 text-white py-20 md:py-32 overflow-hidden">
+            <div class="container mx-auto text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Adaptive Identity Guardian: <br> Securing the Mid-Market Frontier
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                    A cloud-native, AI-powered IGA and PAM platform designed to deliver enterprise-grade identity security with unparalleled simplicity, transparent pricing, and proactive automation for mid-market enterprises.
+                </p>
+                <a href="#contact" class="btn-primary text-lg inline-block shadow-lg hover:shadow-xl">
+                    Discover Our Strategic Advantage
+                </a>
+            </div>
+            <!-- Abstract background shapes for visual appeal -->
+            <div class="absolute inset-0 z-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="#ffffff" fill-opacity="0.1" d="M0,256L48,240C96,224,192,192,288,186.7C384,181,480,203,576,213.3C672,224,768,224,864,208C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- The Challenge Section -->
+        <section id="challenge" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl section-heading text-center mb-12">
+                    The Unspoken Challenges in Cyber & Identity
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <div class="text-5xl mb-4 feature-icon">💡</div> <!-- Placeholder icon -->
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Cost & Complexity Overload</h3>
+                        <p class="text-gray-600">Existing enterprise solutions burden mid-market with high TCO, complex implementations, and reliance on specialized, expensive IT resources.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-5xl mb-4 feature-icon">🔗</div> <!-- Placeholder icon -->
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Fragmented Hybrid Governance</h3>
+                        <p class="text-gray-600">Lack of seamless integration across on-premises, cloud, and legacy systems leads to security blind spots and operational inefficiencies.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-5xl mb-4 feature-icon">🛡️</div> <!-- Placeholder icon -->
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Reactive Security Posture</h3>
+                        <p class="text-gray-600">Current AI often detects after the fact, failing to proactively prevent sophisticated, AI-driven fraud and subtle long-term security drifts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Solution Section -->
+        <section id="solution" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl section-heading mb-6">
+                        Introducing <span class="text-cyberark-blue">Adaptive Identity Guardian</span>
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Adaptive Identity Guardian is a cloud-native, AI-powered Identity Governance and Administration (IGA) and Privileged Access Management (PAM) platform. We deliver enterprise-grade identity security and compliance with unparalleled simplicity, transparent pricing, and proactive automation.
+                    </p>
+                    <p class="text-gray-600">
+                        Our focus shifts the paradigm from reactive threat detection to continuous identity posture management and automated risk remediation, specifically tailored for the unique needs of mid-market enterprises.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/E0F2FE/007BFF?text=Unified+Dashboard+Mockup" alt="Adaptive Identity Guardian Dashboard Mockup" class="rounded-xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Differentiators Section -->
+        <section id="features" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl section-heading text-center mb-12">
+                    Our Strategic Differentiators: How We Win
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Transparent & Predictable Pricing</h3>
+                        <p class="text-gray-600">Eliminate hidden fees and large upfront investments with a clear, tiered subscription model designed for mid-market budgets.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Simplified Setup & Low-Code Integrations</h3>
+                        <p class="text-gray-600">Drastically reduce implementation time and reliance on expensive professional services with intuitive, guided onboarding and pre-built connectors.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Unified Hybrid Identity Fabric</h3>
+                        <p class="text-gray-600">Achieve seamless, consistent policy enforcement and real-time visibility across on-premises, cloud, and legacy systems from a single pane of glass.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Proactive AI-driven Posture Management</h3>
+                        <p class="text-gray-600">Leverage behavioral AI for continuous monitoring, predictive risk identification, and automated policy adjustments to maintain least privilege.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Automated Remediation & Self-Healing Identity</h3>
+                        <p class="text-gray-600">Automate responses to detected risks (e.g., temporary access revocation), significantly reducing manual oversight and ensuring continuous security.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Extended Audit & Forensic Capabilities</h3>
+                        <p class="text-gray-600">Go beyond typical 30-day log retention with customizable periods and advanced analytics for in-depth investigations and compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Opportunity Section -->
+        <section id="market" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl section-heading text-center mb-12">
+                    Compelling Market Opportunity: The Mid-Market Imperative
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/E0F2FE/007BFF?text=Market+Growth+Chart" alt="Market Growth Chart" class="rounded-xl shadow-xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">A Substantial & Growing Segment</h3>
+                        <p class="text-gray-700 mb-4">
+                            Mid-market enterprises (100-2,000 employees, $10M-$1B revenue) represent a rapidly expanding segment, often underserved by existing solutions designed for larger, more resource-rich organizations.
+                        </p>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">High Willingness to Pay & Quantifiable ROI</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Regulatory necessity (e.g., FinTech compliance) drives non-negotiable budget allocation.</li>
+                            <li>PAM solutions alone can deliver an average annual ROI of <span class="font-bold text-cyberark-blue">$816,000</span> through efficiencies in onboarding, offboarding, and incident response.</li>
+                            <li>Mid-market companies are willing to invest in solutions that reduce operational burden and provide clear cost savings.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-blue-800 to-blue-900 text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Ready to Secure the Future of Identity?
+                </h2>
+                <p class="text-lg mb-10 max-w-2xl mx-auto opacity-90">
+                    Explore how Adaptive Identity Guardian can empower mid-market enterprises with unparalleled identity security and operational efficiency.
+                </p>
+                <a href="#" class="btn-primary text-lg inline-block bg-white text-cyberark-blue hover:bg-gray-100 shadow-lg hover:shadow-xl">
+                    Request a Detailed Briefing
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-gray-400 py-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 CyberArk. All rights reserved. | Adaptive Identity Guardian</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
